@@ -1,0 +1,21 @@
+name: PushTest
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+
+  test:
+      runs-on: ubuntu-latest
+      steps:
+        # Checkout MASTER
+        - uses: actions/checkout@v2
+
+        - run: cat README.md
+
+        - run: find        
+        
+        - run: pwd
+
+        - run: ls ..
