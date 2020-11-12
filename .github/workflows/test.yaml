@@ -24,6 +24,6 @@ jobs:
         - uses: actions/checkout@v2
           with:
             repository: pafmon/test-gha-log
-            path: ../log
+            path: log
 
-        - run: ls ../log
+        - run: ls -l log
